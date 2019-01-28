@@ -4,3 +4,7 @@
 /build/
 /test/
 /bin/
+
+\.project
+
+\.classpath
