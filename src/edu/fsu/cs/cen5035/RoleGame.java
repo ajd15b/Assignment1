@@ -27,5 +27,8 @@ public class RoleGame {
         System.out.println("Crazy Random Sword has " + weapon.hit() + " of damage.");
         System.out.println("Crazy Random Sword was able to do " + weapon.hit(armor) + " of damage due to an armor with "+armor+ " points.");
 
+        weapon = WeaponFactory.getWeapon("battle_axe");
+        System.out.println("Battle Axe has " + weapon.hit() + " of damage.");
+        System.out.println("Battle Axe was able to do " + weapon.hit(armor) + " of damage due to an armor with "+armor+ " points.");
     }
 }
