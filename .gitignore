@@ -3,3 +3,8 @@
 /nbproject/
 /build/
 /test/
+/bin/
+
+\.project
+
+\.classpath
