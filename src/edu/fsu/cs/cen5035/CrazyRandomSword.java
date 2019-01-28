@@ -12,7 +12,7 @@ public class CrazyRandomSword extends BasicWeapon implements Weapon
 	public CrazyRandomSword()
 	{
 		//set damage to a random number between 4 and 99
-		super(ThreadLocalRandom.current().nextInt(4,99));
+		super(ThreadLocalRandom.current().nextInt(4, 99));
 	}
 	
 	@Override
