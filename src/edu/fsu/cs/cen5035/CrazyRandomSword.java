@@ -26,7 +26,15 @@ public class CrazyRandomSword extends BasicWeapon implements Weapon
 	{
 		int damage;
 		//armor ignore is a random number between 3 and 1/3 of armor
-		int armor_ignore = ThreadLocalRandom.current().nextInt(3, ((1/3) * armor));
+		int armor_ignore;
+		if(armor > 0)
+		{
+			armor_ignore = ThreadLocalRandom.current().nextInt(3, (armor/3));
+		}
+		else
+		{
+			armor_ignore = 0;
+		}
 		//subtract the ignored armor from equation
 		armor = armor - armor_ignore;
 		
