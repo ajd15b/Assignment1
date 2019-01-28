@@ -1,0 +1,87 @@
+(a) Paste the console output you saved at the end of step 3.C:
+
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 822 bytes | 411.00 KiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ajd15b/Assignment1.git
+   f7a5d56..3575389  master -> master
+----------------------------------------------------------------------------------------------
+(b) How many commits have been done to the repository (not only by you, but by anyone) so far? 
+Write the git command you used to get this information:
+
+10 commits have been done to the repository so far.
+The command to get this info is: git rev-list --all --count
+----------------------------------------------------------------------------------------------
+(c) When was the .gitignore file modified last? Write the git command you used to get this information:
+
+.gitignore was last modified on January 27th at 12:16.
+The command used to get this info is: ls -l .gitignore
+----------------------------------------------------------------------------------------------
+(d) Mention two reasons why branches are used in a Git repository:
+
+1.) Better support for developers working in parallel
+2.) Isolates development activities among the team
+----------------------------------------------------------------------------------------------
+(e) What is the difference between git log and git status?
+
+Git log is a log of all commits that have happened on
+the repository including the commit id, author, and commit
+message. Git status on the other hand shows paths that are
+different between what is being currently worked on vs what
+is committed as well as files that git is ignoring.
+----------------------------------------------------------------------------------------------
+(f) What command would you use to see the commits where “Weapon.h” was one of the committed files?
+
+git log /xxx/sword.h where xxx is the path to Weapon.h.
+For example, if the file was in the same directory as the other java files I would run:
+git log Assignment1/src/edu/fsu/cs/cen5035/Weapon.h
+----------------------------------------------------------------------------------------------
+(g) What command would you use to see the commits whose commit message contains the word “file”?
+
+git log --grep="file"
+----------------------------------------------------------------------------------------------
+(h) In the context of object-oriented programming (I) What is inheritance? 
+(II) What is polymorphism? (III) What is encapsulation?
+
+I.) Inherritance uses the ideas of parent-child relationships as well as abstraction
+to simplify code. With inherritance, a child class 'inherrits' all of the properties and
+behaviors of the parent class. This helps out the idea of abstraction because for example,
+a shape may have certain properties. A square will have those same properties as well as
+square-specific ones. A triangle will also have shape properties but differences from the square.
+Square and triangle can be simplified by both inherriting the shape class properties.
+
+II) Polymorphism is the idea of using a common interface to complete tasks that may have different
+properties or implementations. For example, calculating the area of a circle requires a radius while
+calculating the radius of a rectangle requires a length and width. With the idea of polymorphism,
+this area implementaion is abstracted and we can use the same interface i.e. 
+"circle.area() and rectangle.area()" to get the area of both even though they are calculated differently.
+
+III) Encapsulation is idea of combining data with methods that use that data. It also allows restriction
+from direct access of data to prevent data corruption/invalidation
+-----------------------------------------------------------------------------------------------
+(i) What is the main difference between the 
+“Dictator and Lieutenants” workflow and the “Integration management” workflow”?
+
+The difference between the Dictator and Lieutenants workflow and the Integration management
+workflow is that in the Dictator and Lieutenants workflow, there is an extra layer of developers
+(the Lieutenants) that integrate a group of developers' code before handing it off to the Dictator
+who integrates all of the Lieutenants code and send it to the blessed repository. In the
+integration management workflow, there are no lieutenants. The developers give their code to one
+person who integrates that code and send it to the blessed repository.
+-----------------------------------------------------------------------------------------------
+(j) Why a team of 100 developers would benefit more by following the “Dictator and Lieutenants” 
+workflow instead of the “Centralized” workflow?
+
+A team of 100 developers benefit from the Dictator and Lieutenant workflow instead of the
+Centralized workflow for the issue of integration and conflicts. With a centralized workflow,
+each developer must ensure that the code they write does not create any conflicts with any other's 
+code. This means if you were working with 100 developers, they would all have to be communicating
+very closely to ensure no conflicts. With the Dictator and Lieutenant workflow, the issue of
+conflicts is resolved by the Lieutenants and Dictator. So the developers only need to communicate
+with the other developers who also report to the same Lieutenant. This greatly simplifies the number
+of conflicts as well as the number of people who need to be in constant communication.
+---------------------------------------------------------------------------------------------- 
